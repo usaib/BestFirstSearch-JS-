@@ -1,11 +1,13 @@
 const Graph=require('./WgraphsAdjList');
 const PriorityQueue=require('./PriorityQueues');
+//------------INPUT 1---------------
 nodes=['S','A','B','C','D','G'];
 heuristics=[10,3,2,1,4,0];
+//------------INPUT 2----------------
 // nodes=['A','B','C','D','E','F','G','H','I','J'];
-// heuristics=[0,1,6,3,0,0,0,0,0,0];
 // heuristics=[12,13,14,3,15,16,17,18,2,0];
 g=new Graph(nodes,heuristics);
+//------------INPUT 1---------------
 g.add_edges('S','A');
 g.add_edges('S','B');
 g.add_edges('A','C');
@@ -14,7 +16,7 @@ g.add_edges('B','D');
 g.add_edges('B','G');
 g.add_edges('D','C');
 g.add_edges('D','G');
-////////////////////////////////////
+//------------INPUT 2----------------
 // g.add_edges('A','B');
 // g.add_edges('A','C');
 // g.add_edges('A','D');
